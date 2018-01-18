@@ -24,14 +24,14 @@ void Led::Off(){
     this->on = false;
 }
 
-Led ledky[3]{16,5,4,};
+Led ledky[3]{16,5,4};
 
 void setup() {
     // put your setup code here, to run once:
 }
 
 void loop() {
-    for(int i = 0;i < 7;i++){
+    for(int i = 0;i < 3;i++){
         ledky[i].On();
         delay(50);
         ledky[i].Off();
